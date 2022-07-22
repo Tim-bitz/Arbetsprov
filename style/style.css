@@ -1,0 +1,107 @@
+/* Header styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding-top: 120px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0px 0px 3px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    width: 30%;
+
+}
+
+.hero-img-container{
+    width: 100vw;
+    height: 75vh;
+}
+
+.menu-index {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: small;
+}
+
+/* styling för öppnad hamburger menu */
+.mobile-menu-btn:hover {
+    cursor: pointer
+}
+
+.mobile-menu-container {
+    position: absolute;
+    left: 60px;
+    top: 85px;
+    background-color: white;
+}
+
+.mobile-menu {
+    padding: 0px;
+}
+
+.mobile-menu-item {
+    margin: 55px;
+}
+
+
+/* desktop */
+@media all and (min-width: 768px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 768px) {
+    .menu-index {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        left: 60px;
+    }
+
+}
